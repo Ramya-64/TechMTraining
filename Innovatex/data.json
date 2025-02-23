@@ -1,0 +1,41 @@
+{
+    "speakers": [
+        {
+            "name": "Dr. Alice Johnson",
+            "qualification": "Engagement Manager, Exponentia.ai, India.",
+            "topic": "The Future of AI",
+            "time": "10:00 AM - 11:00 AM",
+            "image": "https://th.bing.com/th/id/R.b1232dee67600b6c0e21b0f1fb5fd3d6?rik=MukMoYN9nbxNCA&riu=http%3a%2f%2fwww.theshelbyreport.com%2fwp-content%2fuploads%2f2014%2f09%2fAlice-Johnson-5129-Edit.jpg&ehk=kyZHrp6iuHj6l3lqC6jxIn7jeyCLNknYCTEXb1PUbwU%3d&risl=&pid=ImgRaw&r=0"
+        },
+        {
+            "name": "Mr. Bob Smith",
+            "qualification": "Senior Lecturer, University of Sultan Zainal Abidin, Malaysia.",
+            "topic": "Cybersecurity Trends in 2025",
+            "time": "11:30 AM - 12:30 PM",
+            "image": "https://th.bing.com/th/id/OIP.xDP5CMD8N5B_RDLuDYs6iAHaIJ?rs=1&pid=ImgDetMain"
+        },
+        {
+            "name": "Ms. Carol Lee",
+            "qualification": "Professor of Electronics Engineering, Macquarie University, Australia",
+            "topic": "Blockchain Beyond Cryptocurrency",
+            "time": "2:00 PM - 3:00 PM",
+            "image": "https://i1.rgstatic.net/ii/profile.image/1066352882229248-1631249747618_Q512/Caroline-Lee-13.jpg"
+        }
+    ],
+    "schedule": [
+        {
+            "day": "Day 1",
+            "sessions": [
+                { "time": "10:00 AM", "title": "Opening Keynote" },
+                { "time": "11:30 AM", "title": "AI and Ethics" }
+            ]
+        },
+        {
+            "day": "Day 2",
+            "sessions": [
+                { "time": "10:00 AM", "title": "Cybersecurity Best Practices" },
+                { "time": "2:00 PM", "title": "Future of Web Development" }
+            ]
+        }
+    ]
+}

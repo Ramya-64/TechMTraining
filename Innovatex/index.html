@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateX Conference</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="event-details" class="container text-center mt-4">
+        <h2 class="fw-bolder" style="color: wheat !important; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-style:oblique;">
+            <span style="font-size: 60px;">InnovateX 2025</span><br>
+            <span style="font-size: 30px; color: wheat;">International Conference on AI & Data Science</span><br><br>
+        </h2>
+        
+        <p style="font-weight: bold; font-style: italic;font-size: 20px;color: azure;">Technically Sponsored by IEEE Madras Section</p>
+        <br>
+
+        <div class="d-flex justify-content-center gap-3">
+            <div class="countdown-box">
+                <span id="days" class="countdown-number">00</span>
+                <p>Days</p>
+            </div>
+            <div class="countdown-box">
+                <span id="hours" class="countdown-number">00</span>
+                <p>Hours</p>
+            </div>
+            <div class="countdown-box">
+                <span id="minutes" class="countdown-number">00</span>
+                <p>Minutes</p>
+            </div>
+            <div class="countdown-box">
+                <span id="seconds" class="countdown-number">00</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+
+<div class="countdown-container"></div>
+
+<div class="countdown-container"></div>
+
+<br>
+
+<div class="event-details">
+    <div class="event-box">
+        <i class="fas fa-calendar-alt icon"></i>
+        <div>
+            <h4 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Starting Date</h3>
+            <br>
+            <h4 style="font-weight: bold;">2025-03-01</p>
+        </div>
+    </div>
+
+    <div class="event-box">
+        <i class="fas fa-calendar-check icon"></i>
+        <div>
+            <h4 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Ending Date</h3>
+                <br>
+            <h4 style="font-weight: bold;">2025-03-03</p>
+        </div>
+    </div>
+
+    <div class="event-box">
+        <i class="fas fa-map-marker-alt icon"></i>
+        <div>
+            <h4 style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: bold;">Venue</h3>
+                <br>
+            <h4 style="font-weight: bold;">Chennai, India</p>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="about-box">
+    <i class="fas fa-info-circle icon"></i>
+    <div>
+        <h4 style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: bold;">About the Conference</h3>
+      
+        <h4 style="font-style: italic;font-family:'Times New Roman', Times, serif;">The key motive of Innovatex 2025 is to provide a world-class platform for global participants to share ideas and experiences with peers from different parts of the world. This gathering will help delegates establish research or business relations and find international linkage for future collaborations in their career path. We hope that Innovatex will lead to significant contributions to these up-to-date scientific fields.</p>
+    </div>
+</div>
+
+
+<div class="event-details">
+    <div class="event-box">
+        <i class="fas fa-envelope icon"></i>
+        <div>
+            <h4 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Enquiry email</h3>
+            <br>
+            <h4 style="font-weight: bold;">innovatex@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="event-box">
+        <i class="fas fa-globe icon"></i>
+        <div>
+            <h4 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Website</h3>
+            <br>
+            <h4 style="font-weight: bold;"><a href="#" class="website-link">View Website</a></p>
+        </div>
+    </div>
+
+    <div class="event-box">
+        <i class="fas fa-building icon"></i>
+        <div>
+            <h4 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Organized by</h3>
+            <br>
+            <h4 style="font-weight: bold;">ICITBDIT</p>
+        </div>
+    </div>
+</div>
+
+    <script>
+        function countdown() {
+            const eventDate = new Date("March 1, 2025 00:00:00").getTime();
+            setInterval(function () {
+                let now = new Date().getTime();
+                let timeLeft = eventDate - now;
+    
+                let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours;
+                document.getElementById("minutes").innerText = minutes;
+                document.getElementById("seconds").innerText = seconds;
+            }, 1000);
+        }
+        countdown();
+    </script>
+        
+    <main>
+        <section id="hero">
+            <h1 style=" color:white;font-weight: bolder;font-family: Verdana, Geneva, Tahoma, sans-serif;">Welcome to InnovateX</h1>
+            <p style="color: white;">The premier tech conference for innovation and future trends.</p>
+            <button id="register-btn" onclick="location.href='register.html'">Register Now</button>
+
+            <div id="countdown"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p style="color: white;">&copy; 2025 InnovateX. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

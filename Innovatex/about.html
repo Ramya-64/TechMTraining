@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - InnovateX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="speakers.html">Speakers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <div class="info-card animate-card">
+                <h2 style="color: navy;">About InnovateX</h2>
+                <p><strong>International Conference on AI & Data Science 2025 (Innovatex-2025)</strong> is the second edition hosted by the Department of Computer Science & Engineering, Panimalar Engineering College, in association with IEEE Madras Chapter, IEEE Computer Society Madras, and Computer Society of India-Chennai.</p>
+                <p>Innovatex-2025 aims to provide an outstanding opportunity for both academic and industrial communities to address challenges in **Data Science, AI, and Agent Technologies**. The conference will feature research articles from across the globe, distinguished keynote speakers, and tutorial sessions.</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="info-card animate-card">
+                <h2>Our Mission</h2>
+                <p>✔️ To create next-generation leaders through effective teaching methodologies and scientific innovation.</p>
+                <p>✔️ To transform lives through **emerging technology, novelty, and sustainability**.</p>
+                <p>✔️ To inculcate **human values and ethical principles** to cater to societal needs.</p>
+                <p>✔️ To foster a **strong research ecosystem**, bridging academia, industry, and R&D.</p>
+                <p>✔️ To **nurture incubation centers**, enabling structured entrepreneurship and start-ups.</p>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="info-card animate-card">
+                <h2>Who Should Attend?</h2>
+                <ul>
+                    <p>👨‍💻 Developers & Engineers</li>
+                    <p>🚀 Startups & Entrepreneurs</li>
+                    <p>🎓 Industry Experts & Researchers</li>
+                    <p>📚 Tech Enthusiasts & Students</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2025 InnovateX. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let cards = document.querySelectorAll(".info-card");
+        
+            function showCards() {
+                let scrollY = window.scrollY + window.innerHeight - 100;
+                cards.forEach(card => {
+                    if (card.offsetTop < scrollY) {
+                        card.classList.add("animate");
+                    }
+                });
+            }
+        
+            window.addEventListener("scroll", showCards);
+            showCards();
+        });
+        </script>
+        
+</body>
+</html>

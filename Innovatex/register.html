@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Your Slot - IFERP ICASET Chennai</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for Popup */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #28a745;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 1000;
+        }
+        .popup h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .popup button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            border: none;
+            background: white;
+            color: #28a745;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup button:hover {
+            background: #f1f1f1;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section id="register">
+            <div class="register-container">
+                <h1 style="color: wheat; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold;">
+                    Reserve Your Slot - InnovateX Chennai
+                </h1>
+                <p style="color: beige;">Fill in the details below to secure your spot.</p>
+                <br>
+                <div class="register-box">
+                    <form onsubmit="showPopup(event)">
+                        <div class="input-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+91">
+                        </div>
+                        <div class="input-group">
+                            <label for="country">Country *</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="social">LinkedIn URL</label>
+                            <input type="url" id="social" name="social" placeholder="Example: https://www.linkedin.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="source">How did you get to know about the Conference?</label>
+                            <select id="source" name="source" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="email">Email</option>
+                                <option value="conference_alerts">Conference Alerts</option>
+                                <option value="google">Google</option>
+                                <option value="advertisement">Advertisement</option>
+                                <option value="college">Through the College</option>
+                                <option value="social_media">Social Media</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" id="paid-event" name="paid-event" required>
+                            <label for="paid-event">Note: FYI, this is a paid event which includes article processing fees. *</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Popup Message -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h2>Successfully Registered!</h2>
+        <p>Thank you for registering for InnovateX Chennai. We look forward to your participation!</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+
+    <script>
+        function showPopup(event) {
+            event.preventDefault(); // Prevent actual form submission
+            document.getElementById("popup").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+            
+            // Redirect to home page after closing popup
+            window.location.href = "index.html"; // Change to your actual home page URL
+        }
+    </script>
+
+</body>
+</html>
