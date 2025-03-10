@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Avatar",
+    "genre": "Sci-Fi",
+    "showtimes": ["1:00 PM", "4:30 PM", "8:00 PM"],
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhips.hearstapps.com%2Fhmg-prod.s3.amazonaws.com%2Fimages%2Fmv5bmtywotewnjazml5bml5banbnxkftztcwodc5mtuwmwatat-v1-1589309872.jpg%3Fcrop%3D0.9869281045751633xw%3A1xh%3Bcenter%2Ctop%26resize%3D480%3A*&f=1&nofb=1&ipt=a7fdbfd40c3c316ca9375e01de01a1061637ba2d3a911568d4f074edcad97be8&ipo=images"
+  },
+  {
+    "id": 2,
+    "title": "Titanic",
+    "genre": "Drama",
+    "showtimes": ["12:00 PM", "3:00 PM", "7:00 PM"],
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tvtxc56w0rpLWlEP-3q1OAHaFN%26pid%3DApi&f=1&ipt=779e4d62284e2b20c0a8d2397966d967cdc3ac141e67a9fdc16a706c8ef54f03&ipo=images"
+  },
+  {
+    "id": 3,
+    "title": "Avengers: Endgame",
+    "genre": "Action",
+    "showtimes": ["10:30 AM", "2:00 PM", "6:30 PM"],
+    "image": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Frozen",
+    "genre": "Fantasy",
+    "showtimes": ["10:30 AM", "2:00 PM", "6:30 PM"],
+    "image": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fsimplywallpaper.net%2Fpictures%2F2013%2F12%2F04%2FDisney-Frozen-Movie-cast-wallpaper.jpg&f=1&nofb=1&ipt=7272c071255791ab5dc5b7c7fda495b77ee96857460a3da6256a20018cce3d06&ipo=images"
+  },
+  {
+    "id": 5,
+    "title": "Jumanji3",
+    "genre": "Action",
+    "showtimes": ["10:30 AM", "2:00 PM", "6:30 PM"],
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmediavideo.blastingnews.com%2Fp%2F4%2F2019%2F04%2F12%2F7c57b3d1-7aba-4686-bb1c-239fffd666fc.jpg&f=1&nofb=1&ipt=e9fc0e20d5cd5a300ecb0049ac71fb3f570daff913002ef783579c6de1dfd008&ipo=images"
+  },
+  {
+    "id": 6,
+    "title": "Star Wars",
+    "genre": "Action",
+    "showtimes": ["10:30 AM", "2:00 PM", "6:30 PM"],
+    "image": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
+  }
+]
