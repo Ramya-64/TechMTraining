@@ -1,0 +1,85 @@
+.indian-container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Collection Title */
+.product-title {
+    text-align: center; /* Centers text */
+    width: 100%; /* Ensures full-width alignment */ /* Centers the block */
+    font-size: 1.8rem; /* Adjust size if needed */
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* Ensures a horizontal flex layout while allowing wrapping */
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap instead of overflowing */
+    justify-content: center; /* Centers items in the row */
+    gap: 20px; /* Adds space between cards */
+    padding-bottom: 10px;
+}
+
+
+/* Custom scrollbar styling for Chrome */
+.product-list::-webkit-scrollbar {
+    height: 6px;
+}
+
+.product-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.product-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+/* Center align the title */
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Center align the filter container */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styling for Filter Label */
+.filter-label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling the Dropdown to Look Like a Button */
+.price-dropdown {
+    background-color: #ff69b4; /* Pink Shade */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Change color on hover */
+.price-dropdown:hover {
+    background-color: #e162a6;
+}
+
+/* Ensuring dropdown options are readable */
+.price-dropdown option {
+    color: black;
+}
+

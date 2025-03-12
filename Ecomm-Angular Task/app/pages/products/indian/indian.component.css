@@ -1,0 +1,120 @@
+.indian-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    flex-grow: 1;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 300px; /* Ensure fixed width */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-title {
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.product-description {
+    font-size: 16px;
+    color: #555;
+}
+
+.product-rating {
+    font-size: 14px;
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.discount-price {
+    color: #d32f2f; /* Bold red price */
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 8px;
+}
+
+.discount {
+    color: #388e3c; /* Green for discount */
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.buy-now {
+    background-color: #ff4081;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buy-now:hover {
+    background-color: #e91e63;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .product-list {
+        gap: 10px;
+    }
+}

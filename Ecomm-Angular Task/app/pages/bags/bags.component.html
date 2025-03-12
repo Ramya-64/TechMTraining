@@ -1,0 +1,22 @@
+<div class="bag-container">
+    <h3 class="bag-title"></h3>
+
+    <div class="filter-container">
+        <label for="priceFilter" class="filter-label">Filter by Price:</label>
+        <select id="priceFilter" [(ngModel)]="selectedPriceRange" (change)="onPriceFilterChange()" class="price-dropdown">
+            <option value="">All Prices</option>
+            <option value="0-500">Under ₹500</option>
+            <option value="500-1000">₹500 - ₹1000</option>
+            <option value="1000-2000">₹1000 - ₹2000</option>
+            <option value="2000">Above ₹2000</option>
+        </select>
+    </div> 
+
+
+    <div class="bag-list">
+        <app-bagcard
+            *ngFor="let bag of bagList  | priceFilter:minPrice:maxPrice"
+            [bag]="bag">
+        </app-bagcard>
+    </div>
+</div>

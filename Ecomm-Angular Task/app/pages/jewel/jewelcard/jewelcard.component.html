@@ -1,0 +1,23 @@
+<div class="jewel-container">
+    <div class="jewel-list">
+        <div class="jewel-card">
+            <img [src]="'http://localhost:8090/' + jewel.image" alt="{{ jewel.title }}" class="jewel-image" />
+            <div class="jewel-details">
+                <h2 class="jewel-title">{{ jewel.title }}</h2>
+                <p class="jewel-description">{{ jewel.description }}</p>
+
+                <p class="jewel-rating">
+                    ⭐ {{ jewel.rating }} ({{ jewel.reviews }} reviews)
+                </p>
+
+                <p class="jewel-price">
+                    <span class="discount-price">₹{{ jewel.price }}</span>
+                    <span class="jewel-original-price">₹{{ jewel.mrp }}</span>
+                    <span class="jewel-discount">({{ jewel.discount }}% Off)</span>
+                </p>
+
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>

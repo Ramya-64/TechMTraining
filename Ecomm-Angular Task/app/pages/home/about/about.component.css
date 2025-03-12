@@ -1,0 +1,85 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures it fills the screen */
+    padding: 20px;
+    background-color: #ffe6f2; /* Soft pastel pink */
+}
+
+.about-card {
+    background-color: #ffccda; /* Baby pink */
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 50px;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    color: #5a3e36;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensuring Image is Centered & Positioned Properly */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about-image {
+    width: 100%;  
+    max-width: 700px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Keeps space between image and text */
+}
+
+.about-title {
+    font-weight: bold;
+    font-size: 42px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    color: #710571;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.about-description {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #5a3e36;
+    max-width: 900px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Taglines Section */
+.taglines {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #9eeee5, #c9a4e7); /* Aesthetic blue gradient */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.taglines p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff; /* White text for contrast */
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.taglines p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #be0d98;
+    margin: 10px 0;
+}

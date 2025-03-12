@@ -1,0 +1,23 @@
+<div class="western-container">
+<div class="western-list">
+<div class="western-card">
+    <img [src]="'http://localhost:8090/' + west.image" alt="{{ west.title }}" class="western-image" />
+    <div class="western-details">
+        <h2 class="western-title">{{ west.title }}</h2>
+        <p class="western-description">{{ west.description }}</p>
+
+        <p class="western-rating">
+            ⭐ {{ west.rating }} ({{ west.reviews }} reviews)
+        </p>
+
+        <p class="western-price">
+            <span class="discount-price">₹{{ west.price }}</span>
+            <span class="western-original-price">₹{{ west.mrp }}</span>
+            <span class="western-discount">({{ west.discount }}% Off)</span>
+        </p>
+
+        <button class="buy-now">Buy Now</button>
+    </div>
+</div>
+</div>
+</div>

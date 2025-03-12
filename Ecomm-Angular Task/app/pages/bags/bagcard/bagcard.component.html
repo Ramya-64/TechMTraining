@@ -1,0 +1,23 @@
+<div class="bag-container">
+    <div class="bag-list">
+        <div class="bag-card">
+            <img [src]="'http://localhost:8090/' + bag.image" alt="{{ bag.title }}" class="bag-image" />
+            <div class="bag-details">
+                <h2 class="bag-title">{{ bag.title }}</h2>
+                <p class="bag-description">{{ bag.description }}</p>
+
+                <p class="bag-rating">
+                    ⭐ {{ bag.rating }} ({{ bag.reviews }} reviews)
+                </p>
+
+                <p class="bag-price">
+                    <span class="discount-price">₹{{ bag.price }}</span>
+                    <span class="bag-original-price">₹{{ bag.mrp }}</span>
+                    <span class="bag-discount">({{ bag.discount }}% Off)</span>
+                </p>
+
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>

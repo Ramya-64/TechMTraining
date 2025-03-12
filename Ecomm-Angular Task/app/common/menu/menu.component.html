@@ -1,0 +1,54 @@
+<!-- Top Navbar -->
+<nav class="navbar navbar-expand-lg top-nav">
+    <div class="container-fluid">
+      <!-- Logo + App Name -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="fas fa-shopping-bag fa-lg me-2 text-pink"></i>
+        <span class="app-name">SheStyle</span>
+    </a>
+    
+  
+      <!-- Search Bar -->
+      <form class="d-flex mx-auto search-bar">
+        <!-- Search Input -->
+        <input class="form-control me-2" type="search" placeholder="Search for products..." 
+            [(ngModel)]="searchQuery" name="search" aria-label="Search">
+    
+        <!-- Search Button -->
+        <button class="btn btn-outline-dark" type="button">Search</button>
+    </form>
+    
+  
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link" (click)="loginHandler()">{{ loginMenu }}</a>
+        </li>
+
+        <!-- Show the login form when needed -->
+        <app-login *ngIf="showLoginForm" (closeForm)="showLoginForm = false" (loggedIn)="onLogin($event)"></app-login>
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-heart"></i> Wishlist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Bottom Navbar -->
+  <nav class="navbar navbar-expand-lg bottom-nav">
+    <div class="container-fluid">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" routerLink="/products">Indian Wear</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/western">Western Wear</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/sports">Active & Sports</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/jewel">Jewellery</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/bags">Bags</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/watches">Watches</a></li>
+      </ul>
+    </div>
+  </nav>
+  

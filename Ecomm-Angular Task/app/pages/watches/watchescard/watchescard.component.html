@@ -1,0 +1,23 @@
+<div class="watches-container">
+    <div class="watches-list">
+        <div class="watches-card">
+            <img [src]="'http://localhost:8090/' + watch.image" alt="{{ watch.title }}" class="watches-image" />
+            <div class="watches-details">
+                <h2 class="watches-title">{{ watch.title }}</h2>
+                <p class="watches-description">{{ watch.description }}</p>
+
+                <p class="watches-rating">
+                    ⭐ {{ watch.rating }} ({{ watch.reviews }} reviews)
+                </p>
+
+                <p class="watches-price">
+                    <span class="discount-price">₹{{ watch.price }}</span>
+                    <span class="watches-original-price">₹{{ watch.mrp }}</span>
+                    <span class="watches-discount">({{ watch.discount }}% Off)</span>
+                </p>
+
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>

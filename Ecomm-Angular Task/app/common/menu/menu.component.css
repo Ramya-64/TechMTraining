@@ -1,0 +1,78 @@
+/* 🌸 Top Navbar */
+.top-nav {
+    background-color: #ffb6c1; /* Light Pink */
+    padding: 10px 20px;
+  }
+  
+  .top-nav .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .top-nav .app-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .search-bar {
+    flex-grow: 1; /* Allows it to expand */
+    display: flex;
+    justify-content: center; /* Centers the search bar */
+}
+
+.search-bar input {
+    width: 500px;
+    border-radius: 20px;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    border-radius: 20px;
+    background-color: #e91e63; /* Deep Pink */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 5px;
+}
+
+  
+  /* 🌸 Bottom Navbar */
+.bottom-nav {
+    background-color: #f8bbd0; /* Soft Light Pink */
+    padding: 10px 0;
+  }
+  
+  /* Flexbox for even spacing */
+  .bottom-nav .navbar-nav {
+    display: flex;
+    justify-content: space-evenly; /* Distributes items evenly */
+    width: 100%;
+  }
+  
+  .bottom-nav .nav-item {
+    flex-grow: 1; /* Ensures equal width for each item */
+    text-align: center;
+  }
+  
+  .bottom-nav .nav-link {
+    color: black;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 18px; /* Increases size for better visibility */
+    padding: 10px 15px;
+  }
+  
+  .bottom-nav .nav-link:hover {
+    color: #e91e63; /* Deep Pink Hover */
+    text-decoration: underline;
+  }
+  
+  
+  /* 🌸 Icons */
+  .nav-item .nav-link i {
+    margin-right: 5px;
+  }
+  

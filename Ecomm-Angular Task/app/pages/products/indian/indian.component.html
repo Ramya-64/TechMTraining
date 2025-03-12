@@ -1,0 +1,24 @@
+<div class="indian-container">
+    <div class="product-list">
+      <div class="product-card">
+        <img [src]="'http://localhost:8090/' + product.image" alt="{{ product.title }}" class="product-image" />
+        <div class="product-details">
+          <h2 class="product-title">{{ product.title }}</h2>
+          <p class="product-description">{{ product.description }}</p>
+          
+          <p class="product-rating">
+            ⭐ {{ product.rating }} (Based on {{ product.reviews }} ratings)
+          </p>
+          
+          <p class="product-price">
+            <span class="discount-price">₹{{ product.price }}</span>
+            <span class="original-price">₹{{ product.mrp }}</span>
+            <span class="discount">({{ product.discount }}% Off)</span>
+          </p>
+          
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

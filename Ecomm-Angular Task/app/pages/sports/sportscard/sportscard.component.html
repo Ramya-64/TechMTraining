@@ -1,0 +1,23 @@
+<div class="sports-container">
+    <div class="sports-list">
+        <div class="sports-card">
+            <img [src]="'http://localhost:8090/' + sport.image" alt="{{ sport.title }}" class="sports-image" />
+            <div class="sports-details">
+                <h2 class="sports-title">{{ sport.title }}</h2>
+                <p class="sports-description">{{ sport.description }}</p>
+
+                <p class="sports-rating">
+                    ⭐ {{ sport.rating }} ({{ sport.reviews }} reviews)
+                </p>
+
+                <p class="sports-price">
+                    <span class="discount-price">₹{{ sport.price }}</span>
+                    <span class="sports-original-price">₹{{ sport.mrp }}</span>
+                    <span class="sports-discount">({{ sport.discount }}% Off)</span>
+                </p>
+
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>

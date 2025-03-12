@@ -1,0 +1,50 @@
+.login-container {
+    width: 20rem;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    background: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    background: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%;
+    }
+}
